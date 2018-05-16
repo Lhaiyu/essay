@@ -11,6 +11,6 @@ visibility控件属性，控制控件是否可见，其属性值有三个："vis
 >Java代码：view.setVisibility(View.INVISIBLE);  
 >**隐藏（GONE)**  
 >XML文件：android:visibility="gone"  
->Java代码：view.setVisibility(View.GONE);  
-ScrollView控件，可以以滚动的形式查看屏幕外的内容。
-webview控件，在自己的应用程序中嵌入一个浏览器。
+>Java代码：view.setVisibility(View.GONE);    
+ScrollView控件，可以以滚动的形式查看屏幕外的内容。  
+webview控件，在自己的应用程序中嵌入一个浏览器。  
