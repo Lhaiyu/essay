@@ -14,9 +14,10 @@ visibility控件属性，控制控件是否可见，其属性值有三个："vis
 >Java代码：view.setVisibility(View.GONE);    
   
 ### 2018年5月16号  
-ScrollView控件，可以以滚动的形式查看屏幕外的内容。  
->webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://www.baidu.com");  
-        
+ScrollView控件，可以以滚动的形式查看屏幕外的内容。  
+```
+webView.getSettings().setJavaScriptEnabled(true);//设置内嵌浏览器支持Javascript脚本语言
+webView.setWebViewClient(new WebViewClient());当页面跳转时依旧在内嵌浏览器中
+webView.loadUrl("http://www.baidu.com");//将网址传入，以百度为例
+```
 webview控件，在自己的应用程序中嵌入一个浏览器。  
