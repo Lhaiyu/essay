@@ -15,4 +15,8 @@ visibility控件属性，控制控件是否可见，其属性值有三个："vis
   
 ### 2018年5月16号  
 ScrollView控件，可以以滚动的形式查看屏幕外的内容。  
+>webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("http://www.baidu.com");  
+        
 webview控件，在自己的应用程序中嵌入一个浏览器。  
