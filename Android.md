@@ -26,7 +26,7 @@ ScrollView控件，可以以滚动的形式查看屏幕外的内容。是Framela
 <ScrollView
 android:id="@+id/myscollView"  
 android:layout_width="match_parent" 
- android:layout_height="wrap_content" > 
+android:layout_height="wrap_content" > 
 //这里只能放一个布局或控件
 //一般是放LinearLayout布局
 </ScrollView>
