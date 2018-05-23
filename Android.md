@@ -31,3 +31,18 @@ android:layout_height="wrap_content" >
 //一般是放LinearLayout布局
 </ScrollView>
 ```
+removeAllViews()是ViewGroup中的一个移除所有子view的方法，得到一个空的layout布局。  
+在ViewGroup中还有一个移除子view的方法是removeAllViewsInLayout(),该方法会先测量当前的布局, 一旦调用该方法,只能移除已经自身布局中已计算好的所包含的子view.  
+方法removeAllViewsInLayout()源码:  
+```
+/** 
+     * Call this method to remove all child views from the 
+     * ViewGroup. 
+     */  
+    public void removeAllViews() {  
+        removeAllViewsInLayout();  
+        requestLayout();  
+        invalidate(true);  
+    } 
+```
+方法removeAllViews()除了调用removeAllViewsInLayout()方法还调用了requestLayout()方法，比removeAllviews()方法移除的更彻底。  
