@@ -46,3 +46,19 @@ removeAllViews()是ViewGroup中的一个移除所有子view的方法，得到一
     } 
 ```
 方法removeAllViews()除了调用removeAllViewsInLayout()方法还调用了requestLayout()方法，比removeAllviews()方法移除的更彻底。  
+ ### 2018年5月31号  
+ response.body().string()只能调用一次  
+```
+Toast.makeText(context,"",Toast.LENGTH_SHORT).show();
+```
+该方法只能在主线程中使用,也可以在以下代码中使用
+  
+```
+ runOnUiThread(new Runnable() {
+    @Override
+    public void run() {
+        Toast.makeText(context,"",Toast.LENGTH_SHORT).show();
+    }
+});
+```
+在该代码中使用的原理有待研究  
